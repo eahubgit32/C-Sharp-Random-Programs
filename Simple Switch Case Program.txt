@@ -1,0 +1,28 @@
+//Simple Switch Case Program
+
+using System;
+
+public class SwitchCase
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter a Color");
+        Console.WriteLine("1 - Blue\n2 - Yellow\n3 - Green\n");
+        int input = Convert.ToInt32(Console.WriteLine("Enter a number:") + Console.ReadLine());
+        
+        switch(input){
+            case 1:
+                Console.WriteLine("You Choose Blue");
+                break;
+            case 2:
+                Console.WriteLine("You Choose Yellow");
+                break;
+            case 3:
+                Console.WriteLine("You Choose Green");
+                break;
+            default:
+                Console.WriteLine("Default");
+                break;
+        }
+    }
+}
