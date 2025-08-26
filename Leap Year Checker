@@ -1,0 +1,25 @@
+using system;
+
+
+public class LeapYearManual
+{
+    public static void Main(string[] args)
+    {
+        int year;
+        Console.Write("Enter a year: ");
+        year = Convert.ToInt8(Console.ReadLine());
+        if (year < 0)
+        {
+            Console.WriteLine("Please enter a valid year.");
+            return;
+        }
+        else if (year % 4 == 0 && year % 100 !=0 || year % 400 == 0)
+        {
+            Console.WriteLine(year + " is a leap year.");
+        }
+        else
+        {
+            Console.WriteLine(year + " is not a leap year.");
+        }
+    }
+}
